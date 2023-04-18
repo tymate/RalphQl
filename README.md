@@ -1,4 +1,4 @@
-# Ralphql
+# RalphQl
 
 Ralphql an useful gem for generating GraphQL queries and mutations in Rails applications. With Ralphql, you can quickly and easily create queries and mutations based on your application's data model, freeing up your time to focus on more complex development tasks.
 
