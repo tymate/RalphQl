@@ -1,43 +1,63 @@
-# Genql
+# Ralphql
+<iframe src="https://giphy.com/embed/xT5LMI5WLGkftxKJeE" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/season-10-the-simpsons-10x7-xT5LMI5WLGkftxKJeE">via GIPHY</a></p>
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/genql`. To experiment with that code, run `bin/console` for an interactive prompt.
+Ralphql an useful gem for generating GraphQL queries and mutations in Rails applications. With Ralphql, you can quickly and easily create queries and mutations based on your application's data model, freeing up your time to focus on more complex development tasks.
 
-TODO: Delete this and the text above, and describe your gem
+By using Ralphql, you can reduce the likelihood of typos and other errors that can occur when writing GraphQL queries and mutations by hand. Instead, you can generate the necessary code with a few simple commands and then customize it as needed to fit your specific requirements.
+
+Ralphql's name is a playful reference to the lovable yet dimwitted character from The Simpsons, Ralph Wiggum. By leaving the simple tasks to Ralph, you can focus on the parts of your application that truly require your expertise and creativity.
 
 ## Installation
-
 Add this line to your application's Gemfile:
-
 ```ruby
-gem 'genql'
+gem  'ralphql'
 ```
-
 And then execute:
-
-    $ bundle
+```bash
+$ bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install genql
-
+```bash
+$ gem install ralphql
+```
+ 
 ## Usage
+### Queries Generators
+```bash
+$ rails generate gql YourModel
+```
+And it will create base files:
+ - `app/graphql/types/your_model_type.rb`
+ - `app/graphql/resolvers/your_model_resolver.rb`
+-  `app/policies/your_model_policy.rb` 
+ - `spec/fixtures/graphql/your_models.graphql`
+ - `spec/graphql/queries/your_models_spec.rb` 
+ and it  add  `your_models_field` into `app/graphql/types/query_type.rb`
 
-TODO: Write usage instructions here
+Then now you just have to update  `your_model_policy.rb` and update or remove `xit`  in `your_models_spec.rb` to have a base type fetchable
+
+### Mutations Generators
+```bash
+$ rails generate gql_mutation YourMutation
+```
+And it will create base files:
+      - `app/graphql/mutations/your_mutation.rb`
+      - `spec/graphql/mutations/your_mutation_spec.rb`
+      - `spec/fixtures/graphql/mutations/your_mutations.graphql`
+There is no magical here, juste generate base files, you have to create your own business logic inside 
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
+  
+
 ## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/genql. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
 ## License
-
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Code of Conduct
 
-Everyone interacting in the Genql project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/genql/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the ralphql project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/ralphql/blob/master/CODE_OF_CONDUCT.md).

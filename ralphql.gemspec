@@ -1,12 +1,12 @@
-require_relative "lib/tybo/version"
+require_relative "lib/ralphql/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "genql"
-  spec.version     = Tybo::VERSION
+  spec.name        = "ralphql"
+  spec.version     = Ralphql::VERSION
   spec.authors     = ["Michel Delpierre"]
   spec.email       = ["tech@tymate.com"]
-  spec.homepage    = "https://rubygems.org/gems/genql"
-  spec.summary       = "A Ruby on Rails graphql generators"
+  spec.homepage    = "https://rubygems.org/gems/ralphql"
+  spec.summary       = "A Ruby on Rails gralphql generators"
   spec.description   = ""
   spec.license     = "MIT"
   spec.metadata["homepage_uri"] = spec.homepage
