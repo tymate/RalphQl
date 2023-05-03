@@ -1,11 +1,11 @@
 require_relative "lib/ralphql/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "ralph-ql"
+  spec.name        = "ralph_q"
   spec.version     = Ralphql::VERSION
   spec.authors     = ["Michel Delpierre"]
   spec.email       = ["tech@tymate.com"]
-  spec.homepage    = "https://rubygems.org/gems/ralph-ql"
+  spec.homepage    = "https://rubygems.org/gems/ralph_ql"
   spec.summary       = "A Ruby on Rails gralphql generators"
   spec.description   = ""
   spec.license     = "MIT"
