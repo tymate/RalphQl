@@ -1,7 +1,7 @@
 require_relative "lib/ralphql/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "ralph_q"
+  spec.name        = "ralph_ql"
   spec.version     = Ralphql::VERSION
   spec.authors     = ["Michel Delpierre"]
   spec.email       = ["tech@tymate.com"]
