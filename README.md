@@ -1,17 +1,17 @@
-# Ralph_ql
+# Ralphql_generator
 
-Ralph_ql an useful gem for generating GraphQL queries and mutations in Rails applications. With Ralph_ql, you can quickly and easily create queries and mutations based on your application's data model, freeing up your time to focus on more complex development tasks.
+ralphql_generator an useful gem for generating GraphQL queries and mutations in Rails applications. With ralphql_generator, you can quickly and easily create queries and mutations based on your application's data model, freeing up your time to focus on more complex development tasks.
 
-By using Ralph_ql, you can reduce the likelihood of typos and other errors that can occur when writing GraphQL queries and mutations by hand. Instead, you can generate the necessary code with a few simple commands and then customize it as needed to fit your specific requirements.
+By using ralphql_generator, you can reduce the likelihood of typos and other errors that can occur when writing GraphQL queries and mutations by hand. Instead, you can generate the necessary code with a few simple commands and then customize it as needed to fit your specific requirements.
 
-Ralph_ql's name is a playful reference to the lovable yet dimwitted character from The Simpsons, Ralph Wiggum. By leaving the simple tasks to Ralph, you can focus on the parts of your application that truly require your expertise and creativity.
+ralphql_generator's name is a playful reference to the lovable yet dimwitted character from The Simpsons, Ralph Wiggum. By leaving the simple tasks to Ralph, you can focus on the parts of your application that truly require your expertise and creativity.
 
 ![ralph computing](https://media.giphy.com/media/xT5LMI5WLGkftxKJeE/giphy.gif)
 
 ## Installation
 Add this line to your application's Gemfile:
 ```ruby
-gem  'ralph_ql'
+gem  'ralphql_generator'
 ```
 And then execute:
 ```bash
@@ -21,7 +21,7 @@ $ bundle install
 Or install it yourself as:
 
 ```bash
-$ gem install ralph_ql
+$ gem install ralphql_generator
 ```
  
 ## Usage
@@ -61,4 +61,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Ralph_ql project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/tymate/Ralph_ql/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the ralphql_generator project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/tymate/ralphql_generator/blob/main/CODE_OF_CONDUCT.md).
