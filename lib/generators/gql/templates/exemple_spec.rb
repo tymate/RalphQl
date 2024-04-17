@@ -24,11 +24,5 @@ RSpec.describe Types::QueryType, type: :request do
     end
   end
 
-  describe 'when unauthenticated' do
-    before do
-      do_graphql_request
-    end
-
-    include_examples 'when unauthenticated'
-  end
+  include_examples 'when unauthenticated'
 end
