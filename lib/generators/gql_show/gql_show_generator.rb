@@ -5,7 +5,7 @@ class GqlShowGenerator < Rails::Generators::NamedBase
 
   def create_gql_file
     template 'exemple_spec.rb', File.join('spec/graphql/queries/types', "query_type_#{file_name.underscore}_spec.rb")
-    template 'exemple.graphql.rb', File.join('spec/fixtures/graphql', "#{file_name.underscore}.graphql")
+    template 'exemple.graphql.rb', File.join('spec/fixtures/graphql/queries', "#{file_name.underscore}.graphql")
     insert_into_query_type
   end
 

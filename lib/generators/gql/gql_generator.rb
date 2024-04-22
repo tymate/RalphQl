@@ -7,7 +7,7 @@ class GqlGenerator < Rails::Generators::NamedBase
     template 'exemple_policy.rb', File.join('app/policies/', "#{file_name.underscore}_policy.rb")
     template 'exemple_spec.rb', File.join('spec/graphql/queries/types', "query_type_#{file_name.underscore.pluralize}_spec.rb")
     template 'exemple_resolver.rb', File.join('app/graphql/resolvers', "#{file_name.underscore}_resolver.rb")
-    template 'exemple.graphql.rb', File.join('spec/fixtures/graphql', "#{file_name.underscore.pluralize}.graphql")
+    template 'exemple.graphql.rb', File.join('spec/fixtures/graphql/queries', "#{file_name.underscore.pluralize}.graphql")
     template 'exemple_type.rb', File.join('app/graphql/types', "#{file_name.underscore}_type.rb")
     insert_into_query_type
   end
