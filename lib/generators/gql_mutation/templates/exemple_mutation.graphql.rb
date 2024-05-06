@@ -1,7 +1,7 @@
 fragment errorFields on ValidationError {
   path
   message
-  attributes
+  attribute
   error
 }
 
